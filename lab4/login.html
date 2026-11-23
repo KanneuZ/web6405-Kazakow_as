@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация — Bolt Action Army Builder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <a href="index.html" class="sidebar__logo">Bolt Action<br>Army Builder</a>
+        <nav class="sidebar__nav">
+            <a href="index.html" class="sidebar__link">Dashboard</a>
+            <a href="rosters.html" class="sidebar__link">Rosters</a>
+            <a href="factions.html" class="sidebar__link">Factions</a>
+            <a href="battle.html" class="sidebar__link">Battle report</a>
+            <a href="about.html" class="sidebar__link">About</a>
+            <a href="login.html" class="sidebar__link sidebar__link--active">Авторизация</a>
+        </nav>
+    </aside>
+    <main class="content">
+        <h1 class="content__title">Авторизация</h1>
+        <div class="card">
+            <form id="loginForm" class="form">
+                <div class="form__group">
+                    <label for="username" class="form__label">Логин</label>
+                    <input type="text" id="username" name="username" class="form__input" placeholder="Введите логин" required>
+                </div>
+                <div class="form__group">
+                    <label for="password" class="form__label">Пароль</label>
+                    <input type="password" id="password" name="password" class="form__input" placeholder="Введите пароль" required>
+                </div>
+                <div class="form__group form__group--checkbox">
+                    <input type="checkbox" id="consent" name="consent" class="form__checkbox" required>
+                    <label for="consent" class="form__label form__label--checkbox">Я согласен на обработку персональных данных</label>
+                </div>
+                <button type="submit" class="button button--primary">Отправить данные на сервер</button>
+            </form>
+        </div>
+    </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
